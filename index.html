@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Form Validation</title>
+  <link rel="shortcut icon" href="../images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+</head>
+
+<body>
+  <header class="fixed-bar">
+    <h1 class="page-title">Form Validation</h1>
+  </header>
+  <nav>
+    <ul class="navigation">
+      <li><a href="">Home</a></li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+  <main>
+    <form class="form">
+      <label for="input-name">Name</label>
+      <input type="text" name="name" class="form-input" id="input-name" oninput="inputForm()">
+      <label for="input-mail">Mail</label>
+      <input type="text" name="email" class="form-input" id="input-mail" oninput="inputForm()">
+      <label for="input-message">Your Message</label>
+      <textarea name="message" cols="30" rows="10" class="form-input" id="input-message"
+        oninput="inputForm()"></textarea>
+      <button type="submit" class="submit-button" disabled>Submit</button>
+    </form>
+  </main>
+  <script src="sandbox.js"></script>
+</body>
+
+</html>
